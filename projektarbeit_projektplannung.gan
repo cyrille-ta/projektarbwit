@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Projektarbeit" company="" webLink="http://" view-date="2025-09-17" view-index="0" gantt-divider-location="514" resource-divider-location="300" version="3.3.3316" locale="en">
+    <description/>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd3" name="Name" width="293" order="0"/>
+        <field id="tpd4" name="Begin date" width="110" order="1"/>
+        <field id="tpd5" name="End date" width="110" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#00ffff #ffff33 #00ff33 #0000ff #330033 #ff3366]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="56cc2f4f14e2494e870464e95e262544" name="Planung und Vorbereitung" color="#330033" meeting="false" start="2025-09-17" duration="6" complete="100" expand="true">
+            <task id="1" uid="a023be8ad0fb4399959e7f74950fdb9a" name="Projektidee entwickelt" color="#ff3366" meeting="false" start="2025-09-17" duration="1" complete="100" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" uid="71adf582052b425a920d3987fcc21883" name="Planung der Software (Arduino und MIT App Inventor)" color="#ff3366" meeting="false" start="2025-09-18" duration="2" complete="100" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" uid="6e6df8012b8047f08c80ab02ce8df030" name="Recherche zu benötigten Bauteilen" color="#ff3366" meeting="false" start="2025-09-22" duration="3" complete="100" expand="true">
+                <notes><![CDATA[-Esp32 mit und ohne camera
+-4WD Car Kit Freenove]]></notes>
+            </task>
+        </task>
+        <task id="3" uid="a5f17c0b52d14770a294d21792d9fcc6" name="App-Entwicklung" meeting="false" start="2025-09-24" duration="11" complete="96" expand="true">
+            <task id="4" uid="890230a4cfe048bf9344d7febd1f0cf2" name="Benutzeroberfläche aufgebaut" color="#0000ff" meeting="false" start="2025-09-24" duration="2" complete="80" expand="false">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" uid="0ac2c0723a5e4e1cb1e09199a65a4637" name="Bluetooth-Client erstellt" color="#0000ff" meeting="false" start="2025-09-26" duration="2" complete="100" expand="true">
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" uid="ed10d3317b6542cebbfe2da0bc27de49" name="Steuerung Mode-Auswahl programmieren(tilt, joystick, QR-code erkennung" color="#0000ff" meeting="false" start="2025-09-30" duration="7" complete="100" expand="true"/>
+        </task>
+        <task id="7" uid="bba49e7129ea43c6bf8eaee6fdddd09f" name="Hardwareaufbau" meeting="false" start="2025-10-15" duration="5" complete="36" expand="true">
+            <task id="10" uid="e069a2a1ae0e4ccc99bb6f95e293a2df" name="Anbringen des Displays und Kamera" color="#00ff33" meeting="false" start="2025-10-15" duration="2" complete="30" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" uid="2d7786653991431a9c498656b74cbbbb" name="Einbau des Ultraschallsensors" color="#00ff33" meeting="false" start="2025-10-17" duration="1" complete="20" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" uid="b732f7e378c142f08eb3d9b91b19fade" name="Zusammenbau des 4WD-Chassis" color="#00ff33" meeting="false" start="2025-10-20" duration="2" complete="50" expand="true"/>
+        </task>
+        <task id="13" uid="d74d047de6b04701a33844178a08b7a7" name="Sonstiges" color="#ffff33" meeting="false" start="2025-10-23" duration="30" complete="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="14" uid="fb3d159d16ac47c08017d2b4612f260a" name="Projektarbeit Dokumentieren" color="#00ffff" meeting="false" start="2025-12-04" duration="60" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
